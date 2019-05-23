@@ -29,6 +29,7 @@ namespace Ivory.TesteEstagio.Detetive
 
             var arma = new Random();
             Arma = arma.Next(1, 7);
+
         }
 
         /// <summary>

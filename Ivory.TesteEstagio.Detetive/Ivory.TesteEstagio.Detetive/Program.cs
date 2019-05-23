@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Ivory.TesteEstagio.Detetive
@@ -12,7 +13,9 @@ namespace Ivory.TesteEstagio.Detetive
         {
             var testemunha = new Testemunha();
 
-            // Escreva seu código aqui.
+            var detetive = new Detetive();
+
+            detetive.Interroga(testemunha);
 
             Console.WriteLine("Número de Tentativas: " + testemunha.ObterNumeroInterogatoriosRealizados());
             Console.ReadKey();
